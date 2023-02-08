@@ -1,0 +1,223 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+    font-family: 'Lato', sans-serif;
+}
+
+
+#main-container{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#second-container{
+    height: 95%;
+    width: 80%;
+    background-color: darkblue;
+}
+
+
+#main-title{
+    padding: 0.5rem;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+
+#add-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#add-in{
+    margin-left: 3rem;
+    height: 3.5rem;
+    width: 240%;
+    font-size: 1.7rem;
+}
+#add-button{
+    height: 5rem;
+    width: 5rem;
+    margin-right: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3rem;
+}
+#add-button:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#add-icon{
+    height: 7rem;
+}
+
+
+#list-container{
+    width: 90%;
+    height: 50%;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    background-color: #22c55e;
+    overflow: auto;
+}
+#list-container::-webkit-scrollbar{
+    width: 0.5rem;
+}
+#list-container::-webkit-scrollbar-thumb{
+    background-color: yellow;
+    border-radius: 0.25rem;
+}
+#list{
+    padding: 0;
+    width: 98%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+li{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: 0.2rem solid;
+}
+#buttons-container{
+    display: flex;
+    flex-direction: row;
+}
+#delete-button{
+    height: 4rem;
+    width: auto;
+    background-color: red;
+}
+#delete-button:hover{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+#delete-icon{
+    width: 2rem;
+}
+#confirm-button{
+    height: 4rem;
+    width: auto;
+    background-color: green;
+}
+#confirm-button:hover{
+    background-color: rgba(255, 165, 0, 0.5);
+}
+#confirm-icon{
+    width: 2rem;
+}
+#task{
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    height: auto;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+
+#iterators-container{
+    height: 4rem;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    gap: 3.5rem;
+}
+#total-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: brown;
+}
+#incomplete-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: red;
+}
+#complete-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: green;
+}
+.all-task{
+    padding: 0.5rem;
+    font-size: 1.8rem;
+}
+
+@media (max-width:800px) {
+    #main-container{
+        width: 100%;
+    }
+    
+    
+    #second-container{
+        width: 90%;
+        height: 100%;   
+    }
+    
+    
+    #title-container{
+        margin-bottom: 1rem;
+    }
+    #main-title{
+        margin: 0;
+    }
+    
+    #add-container{
+        margin-bottom: 1rem;
+    }
+    #add-in{
+        margin-left: 0.5rem;
+        width: 93%;
+    }
+    #add-button{
+        margin: 0;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 2.5rem;
+    }
+    #add-icon{
+        width: 4rem;
+    }
+
+
+    #list-container{
+        margin: 0;
+        height: 60%;
+        width: 100%;
+    }
+    #list{
+        width: 97%;
+    }
+    #buttons-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #iterators-container{
+        margin: 0;
+        gap: 0;
+    }
+    .all-task{
+        padding: 0.4rem;
+        font-size: 0.9rem;
+    }
+}
